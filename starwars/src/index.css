@@ -5,4 +5,5 @@ body {
   background-image: url('./sw-bg.jpg');
   background-repeat: no-repeat;
   background-size: auto;
+  overflow: hidden;
 }
