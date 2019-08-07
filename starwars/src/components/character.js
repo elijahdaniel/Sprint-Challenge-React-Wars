@@ -1,9 +1,20 @@
 import React from "react";
 
+const CardStyle = {
+  background: "white",
+  margin: "20px",
+  width: "300px",
+  textAlign: "center",
+  fontSize: "0.9rem",
+  borderRadius: "15px",
+  boxShadow: "0px 5px 10px -5px #000",
+  textTransform: "capitalize"
+};
+
 export default function Character(props) {
   return (
-    <div className="character">
-      <h3 className="name">{props.name}</h3>
+    <div style={CardStyle}>
+      <h3>{props.name}</h3>
       <p>
         <b>Height:</b> {props.height}
       </p>

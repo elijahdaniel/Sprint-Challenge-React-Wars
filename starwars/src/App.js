@@ -23,22 +23,28 @@ const App = () => {
       });
   }, []);
 
+  const CardContainer = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center"
+  };
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div className='cardContainer'>
-      {Array.from(data).map(char => (
-        <Character
-          name={char.name}
-          height={char.height}
-          mass={char.mass}
-          skin_color={char.skin_color}
-          hair_color={char.hair_color}
-          eye_color={char.eye_color}
-          birth_year={char.birth_year}
-          gender={char.gender}
-        />
-      ))}
+      <div style={CardContainer}>
+        {Array.from(data).map(char => (
+          <Character
+            name={char.name}
+            height={char.height}
+            mass={char.mass}
+            skin_color={char.skin_color}
+            hair_color={char.hair_color}
+            eye_color={char.eye_color}
+            birth_year={char.birth_year}
+            gender={char.gender}
+          />
+        ))}
       </div>
     </div>
   );
