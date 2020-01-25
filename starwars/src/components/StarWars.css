@@ -1,0 +1,27 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+    transition: all .4s ease;
+}
+
+.cards:hover {
+    box-shadow: 2px 3px 15px -6px #000;
+    cursor: crosshair;
+}
+
+.cards h3 {
+    background: aliceblue;
+    padding: 10px 0px;
+}
+
+.cards span {
+    text-transform: capitalize;
+}
